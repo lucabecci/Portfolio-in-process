@@ -1,3 +1,4 @@
+/*Global CSS*/
 * {
  margin: 0px;
  padding: 0px;
@@ -5,8 +6,12 @@
 }
 
 body {
- font-family: 'Poppins', sans-serif;
+	font-family: 'Raleway', sans-serif;
 }
+button{
+	font-family: 'Raleway', sans-serif;
+}
+
 /*NAV CSS*/
 header {
 	display: flex;
@@ -100,6 +105,31 @@ header {
 		transform: translateY(0px);
 	}
 }
+
+/*description CSS*/
+.description{
+	background-color: #222831;
+	color: #ffffff;
+	width: 100%;
+	margin: auto;
+	min-height: 40vh;
+	align-items: center;
+}
+.description-me{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px;
+}
+
+.description-me h2{
+	font-weight: 600;
+	padding: 10px 0px 10px 0px;
+}
+
+
+
+/*MediaQuerys for responsive web*/
 @media screen and (max-width: 1024px) {
 	.presentation {
 		flex-direction: column;

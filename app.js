@@ -1,13 +1,14 @@
-let titleDescription = document.querySelector('#title-description')
-let paragraphDescription = document.querySelector('#paragraph-description')
-const URL = `https://api.jsonbin.io/b/5f210aadc58dc34bf5dcf49b/4`
+let titlePresentation = document.querySelector('#title-presentation')
+let paragraphPresentation = document.querySelector('#paragraph-presentation')
+const URL = `https://api.jsonbin.io/b/5f210aadc58dc34bf5dcf49b/6`
 
 const getData = async() =>{
   const resp = await fetch(URL);
   const data = await resp.json();
   console.log(data)
-  titleDescription.innerHTML = data.titleDescription
-  paragraphDescription.innerHTML = data.paragraphDescription
+  const presentation = data.presentation
+  titlePresentation.innerHTML = presentation.titlePresentation
+  paragraphPresentation.innerHTML = presentation.paragraphPresentation
 }
 // function changeButton() {
 //   info.insertAdjacentHTML('beforebegin',

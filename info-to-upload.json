@@ -1,0 +1,11 @@
+{
+    "presentation": {
+      "titlePresentation": "My portfolio",
+      "paragraphPresentation": "My paragraph"
+    },
+    "description": {
+        "titleDescription" : "x",
+        "paragraphDescription" : "y",
+        "technologies": [1,2,3,4,5]
+    }
+  }
